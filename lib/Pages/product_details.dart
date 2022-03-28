@@ -1,3 +1,4 @@
+import 'package:college_project/Pages/cart.dart';
 import 'package:college_project/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -107,7 +108,7 @@ class _ProductdetailsState extends State<Productdetails> {
                                   onPressed: () {
                                     Navigator.of(context).pop(context);
                                   },
-                                  child: Text('Close'),
+                                  child: Text('Close',style: TextStyle(color: Colors.blue),),
                                 )
                               ],
                             );
@@ -139,7 +140,7 @@ class _ProductdetailsState extends State<Productdetails> {
                                   onPressed: () {
                                     Navigator.of(context).pop(context);
                                   },
-                                  child: Text('Close'),
+                                  child: Text('Close',style: TextStyle(color: Colors.blue),),
                                 )
                               ],
                             );
@@ -171,7 +172,7 @@ class _ProductdetailsState extends State<Productdetails> {
                                   onPressed: () {
                                     Navigator.of(context).pop(context);
                                   },
-                                  child: Text('Close'),
+                                  child: Text('Close',style: TextStyle(color: Colors.blue),),
                                 )
                               ],
                             );
@@ -197,7 +198,9 @@ class _ProductdetailsState extends State<Productdetails> {
                 // =============== the size button ==============
                 Expanded(
                   child: new MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+                      },
                       color: Colors.red,
                       textColor: Colors.white,
                       elevation: 0.2,
@@ -205,7 +208,7 @@ class _ProductdetailsState extends State<Productdetails> {
                 ),
                 new IconButton(
                   icon: Icon(Icons.add_shopping_cart),
-                  color: Colors.red,
+                  color: Colors.blue,
                   onPressed: () {},
                 ),
 
