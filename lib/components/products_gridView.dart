@@ -1,5 +1,8 @@
-import 'package:college_project/Pages/product_details.dart';
 import 'package:flutter/material.dart';
+
+// import 'package:college_project/homepage.dart';
+import 'package:college_project/Pages/product_details.dart';
+// import 'package:flutter/material.dart';
 
 class Products extends StatefulWidget {
   @override
@@ -11,15 +14,51 @@ class _ProductsState extends State<Products> {
     {
       "name": "Blazers",
       "picture": "assets/images/products/blazer1.jpeg",
-      "old_price": '120',
-      "price": '85',
+      "old_price": 120,
+      "price": 85,
     },
     {
       "name": "Red Dress",
       "picture": "assets/images/products/dress2.jpeg",
       "old_price": 100,
       "price": 50,
-    }
+    },
+    {
+      "name": "Hills",
+      "picture": "assets/images/products/hills1.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Red Dress",
+      "picture": "assets/images/products/dress2.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Skirt",
+      "picture": "assets/images/products/skt1.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Shoe",
+      "picture": "assets/images/products/shoe1.jpg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Hills2",
+      "picture": "assets/images/products/hills2.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Folks",
+      "picture": "assets/images/products/dress1.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
   ];
 
   @override
@@ -55,48 +94,46 @@ class Single_prod extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-        tag: prod_name,
-        child: Material(
-          child: InkWell(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> Productdetails(
-                //here is passing the values of the product to the product details page
-                product_detail_new_price: prod_price,
-                product_detail_picture: prod_picture,
-                product_detail_name: prod_name,
-                product_detail_old_price: prod_old_price,
-              )));
-            },
-            child: GridTile(
-              footer: Container(
-                color: Colors.white70,
-                child: ListTile(
-                  leading: Text(
-                    prod_name,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+          tag: new Text('Hero 1'),
+          child: Material(
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Productdetails(
+                              //here is passing the values of the product to the product details page
+                              product_detail_new_price: prod_price,
+                              product_detail_picture: prod_picture,
+                              product_detail_name: prod_name,
+                              product_detail_old_price: prod_old_price,
+                            )));
+              },
+              child: GridTile(
+                  footer: Container(
+                    color: Colors.white70,
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: Text(
+                            prod_name,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16.0),
+                          ),
+                        ),
+                        new Text(
+                          "\₹${prod_price}",
+                          style: TextStyle(color: Colors.red),
+                        )
+                      ],
+                    ),
                   ),
-                  title: Text(
-                    "\₹$prod_price",
-                    style: TextStyle(
-                        color: Colors.red, fontWeight: FontWeight.w800),
-                  ),
-                  subtitle: Text(
-                    "\₹$prod_price",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w800,
-                        decoration: TextDecoration.lineThrough),
-                  ),
-                ),
-              ),
-              child: Image.asset(
-                prod_picture,
-                fit: BoxFit.cover,
-              ),
+                  child: Image.asset(
+                    prod_picture,
+                    fit: BoxFit.cover,
+                  )),
             ),
-          ),
-        ),
-      ),
+          )),
     );
   }
 }
