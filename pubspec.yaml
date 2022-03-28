@@ -103,10 +103,32 @@ flutter:
     - assets/images/products/skt1.jpeg
     - assets/images/products/skt2.jpeg
     - assets/images/image/success.png
+    - assets/new/blaze.jpeg
+    - assets/new/sliper.jpeg
+    - assets/new/sandal.jpeg
+    - assets/new/ring.jpeg
+    - assets/new/neck.jpeg
+    - assets/new/neck.jpeg
+    - assets/new/dp5.jpeg
+    - assets/new/dp4.jpeg
+    - assets/new/dp3.jpeg
+    - assets/new/dp2.jpeg
+    - assets/new/dp1.jpeg
+    - assets/new/converse.jpeg
+    - assets/new/blaze2.jpeg
+    - assets/new/10.jpeg
+    - assets/new/11.jpeg
+    - assets/new/12.jpeg
+    - assets/new/13.jpeg
 
 
 
-  # An image asset can refer to one or more resolution-specific "variants", see
+
+
+
+
+
+        # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see

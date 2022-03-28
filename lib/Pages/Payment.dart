@@ -45,7 +45,10 @@ class _PaymentsState extends State<Payments> {
         children: [
           Padding(
             padding: const EdgeInsets.all(18.0),
-            child: Text("Choose your Payment Method",style: TextStyle(color: Colors.grey,fontSize: 28.0),),
+            child: Text(
+              "Choose your Payment Method",
+              style: TextStyle(color: Colors.grey, fontSize: 28.0),
+            ),
           ),
           Expanded(
             child: ListView.separated(
@@ -79,15 +82,17 @@ class _PaymentsState extends State<Payments> {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> Success()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Success()));
                 },
-                child: Text('Pay',style: TextStyle(fontSize: 40.0),),
+                child: Text(
+                  'Pay',
+                  style: TextStyle(fontSize: 40.0),
+                ),
                 style: ElevatedButton.styleFrom(shape: StadiumBorder()),
               ),
             ),
           )
-
-
         ],
       ),
     );

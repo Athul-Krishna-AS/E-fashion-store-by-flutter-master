@@ -108,7 +108,10 @@ class _ProductdetailsState extends State<Productdetails> {
                                   onPressed: () {
                                     Navigator.of(context).pop(context);
                                   },
-                                  child: Text('Close',style: TextStyle(color: Colors.blue),),
+                                  child: Text(
+                                    'Close',
+                                    style: TextStyle(color: Colors.blue),
+                                  ),
                                 )
                               ],
                             );
@@ -140,7 +143,10 @@ class _ProductdetailsState extends State<Productdetails> {
                                   onPressed: () {
                                     Navigator.of(context).pop(context);
                                   },
-                                  child: Text('Close',style: TextStyle(color: Colors.blue),),
+                                  child: Text(
+                                    'Close',
+                                    style: TextStyle(color: Colors.blue),
+                                  ),
                                 )
                               ],
                             );
@@ -172,7 +178,10 @@ class _ProductdetailsState extends State<Productdetails> {
                                   onPressed: () {
                                     Navigator.of(context).pop(context);
                                   },
-                                  child: Text('Close',style: TextStyle(color: Colors.blue),),
+                                  child: Text(
+                                    'Close',
+                                    style: TextStyle(color: Colors.blue),
+                                  ),
                                 )
                               ],
                             );
@@ -199,7 +208,8 @@ class _ProductdetailsState extends State<Productdetails> {
                 Expanded(
                   child: new MaterialButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Cart()));
                       },
                       color: Colors.red,
                       textColor: Colors.white,

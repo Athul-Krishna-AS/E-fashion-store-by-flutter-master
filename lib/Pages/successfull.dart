@@ -12,14 +12,16 @@ class Success extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-
-          Image(image: AssetImage('assets/images/image/success.png'),height: 150.0,),
+          Image(
+            image: AssetImage('assets/images/image/success.png'),
+            height: 150.0,
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
               'Your Payment was done Successfully',
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
             ),
           )
         ],

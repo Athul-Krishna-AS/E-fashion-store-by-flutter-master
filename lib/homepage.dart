@@ -20,16 +20,16 @@ class _HomepageState extends State<Homepage> {
         child: Carousel(
           boxFit: BoxFit.cover,
           images: [
-            AssetImage('assets/images/image/541683171sst1645936488.jpg'),
+            AssetImage('assets/new/13.jpeg'),
             AssetImage('assets/images/image/786067780sst1645936493.jpg'),
-            AssetImage('assets/images/image/644839809sst1645936495.jpg'),
-            AssetImage('assets/images/image/638475912sst1645936490.jpg'),
+            // AssetImage('assets/images/image/786067780sst1645936493.jpg'),
+            AssetImage('assets/new/10.jpeg'),
             AssetImage('assets/images/image/m1.jpeg'),
-            AssetImage('assets/images/image/960881636sst1645937116.jpg'),
-            AssetImage('assets/images/image/134606826sst1645936945.jpg'),
+            // AssetImage('assets/images/image/960881636sst1645937116.jpg'),
+            AssetImage('assets/new/11.jpeg'),
             AssetImage('assets/images/image/c1.jpg'),
             AssetImage('assets/images/image/m2.jpg'),
-            AssetImage('assets/images/image/980186263sst1645936491.jpg'),
+            AssetImage('assets/new/12.jpeg'),
             AssetImage('assets/images/image/848833309sst1645936480.jpg')
           ],
           autoplay: false,
