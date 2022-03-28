@@ -1,3 +1,4 @@
+import 'package:college_project/Pages/cart.dart';
 import 'package:college_project/components/horizontal%20listview.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
@@ -43,7 +44,7 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         elevation: 0.1,
         centerTitle: false,
-        title: Text("Shopify"),
+        title: Text("E-Fashion"),
         actions: <Widget>[
           IconButton(
               icon: Icon(
@@ -53,16 +54,18 @@ class _HomepageState extends State<Homepage> {
               onPressed: () {}),
           IconButton(
               icon: Icon(
-                Icons.shopping_cart,
+                Icons.notifications_active,
                 color: Colors.white,
               ),
               onPressed: () {}),
           new IconButton(
               icon: Icon(
-                Icons.notifications_active,
+                Icons.shopping_cart,
                 color: Colors.white,
               ),
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+              }),
         ],
       ),
       drawer: new Drawer(
@@ -124,7 +127,9 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+              },
               child: ListTile(
                 title: Text("Shopping Cart"),
                 leading: Icon(
